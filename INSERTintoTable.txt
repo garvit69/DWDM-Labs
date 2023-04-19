@@ -1,0 +1,11 @@
+INSERT INTO patient_dim (patient_id, patient_name, patient_age, patient_gender, patient_address, patient_phone)
+VALUES (1, 'John Doe', 35, 'Male', '123 Main St, Anytown USA', '555-555-1212');
+
+INSERT INTO doctor_dim (doctor_id, doctor_name, doctor_specialization, doctor_address, doctor_phone)
+VALUES (1, 'Dr. Jane Smith', 'Cardiology', '456 Oak St, Anytown USA', '555-555-1212');
+
+INSERT INTO time_dim (time_id, date, hour, day_of_week, week_of_year, month, year)
+VALUES (1, '2022-01-01', 8, 'Saturday', 52, 1, 2022);
+
+INSERT INTO treatment_fact (treatment_id, patient_id, doctor_id, time_id, diagnosis, prescription, fee)
+VALUES (1, 1, 1, 1, 'Hypertension', 'Lisinopril', 100.00);
